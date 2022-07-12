@@ -3,7 +3,16 @@
     <div class="wapp-bg">
       <Header />
       <v-container>
-        <v-row justify="center" align="center">
+        <v-row>
+          <v-col cols="5" sm="6" md="6">
+            suncy
+          </v-col>
+          <v-col cols="7" sm="6" md="6">
+            picture
+          </v-col>
+        </v-row>
+
+        <!-- <v-row justify="center" align="center">
           <v-col cols="12" sm="8" md="6">
             <v-card>
               <v-card-title class="headline">
@@ -24,7 +33,7 @@
               </v-card-actions>
             </v-card>
           </v-col>
-        </v-row>
+        </v-row> -->
       </v-container>
     </div>
     <Footer />
@@ -42,12 +51,13 @@ export default {
     &:after {
       content: '';
       background: url('../assets/images/bg.svg') no-repeat;
-      height: 562px;
-      width: 980px;
+      height: 690px;
+      width: 1170px;
       display: block;
       position: absolute;
       top: 0;
       z-index: -1;
+      background-size: 88%;
 
     }
   }

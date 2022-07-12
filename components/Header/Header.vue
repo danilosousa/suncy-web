@@ -9,7 +9,7 @@
               <span class="logo-text">SUNSY</span>
             </div>
           </v-col>
-          <v-col md="4">
+          <v-col md="5">
             <nav class="header-nav">
               <ul>
                 <li>
@@ -22,7 +22,7 @@
               </ul>
             </nav>
           </v-col>
-          <v-col md="5" class="d-flex align-center justify-end">
+          <v-col md="4" class="d-flex align-center justify-end">
             <span class="header__icon-search">
 
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 15 15" width="15px" height="15px">
@@ -33,9 +33,10 @@
 
             </span>
             <span>
-              <button class="button button-main shadow">
+              <!-- <button class="button button-main shadow">
                 Publique
-              </button>
+              </button> -->
+              <CustomButton btn-text="Publique" />
             </span>
           </v-col>
         </v-row>
@@ -49,6 +50,7 @@
 
 export default {
   name: 'HeaderLayout',
+
   data () {
     return {
       // testex: ''
