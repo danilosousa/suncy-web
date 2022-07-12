@@ -7,12 +7,14 @@
           <v-col cols="5" sm="6" md="6">
             <div class="box">
               <div class="box__title">
-                Suncy
+                <h1>Suncy</h1>
               </div>
               <div class="box__subtitle">
-                The Biggest STRATEGY IN 2020
+                <span>The Biggest<strong> BUSINESS STRATEGY IN 2020</strong></span>
               </div>
-              <div class="box__description" />
+              <span class="box__description">
+                April 24, 2022 Crown Hall, 05 Vineyard Drive, Ohio
+              </span>
             </div>
           </v-col>
           <v-col cols="7" sm="6" md="6">
