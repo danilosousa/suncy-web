@@ -13,7 +13,7 @@
                 <span>The Biggest<strong> BUSINESS STRATEGY IN 2020</strong></span>
               </div>
               <span class="box__description">
-                April 24, 2022 Crown Hall, 05 Vineyard Drive, Ohio
+                April 24, 2022 Crown Hall, 05 Vineyard Drive, Ohio teste
               </span>
             </div>
           </v-col>
