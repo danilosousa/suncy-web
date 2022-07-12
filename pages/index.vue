@@ -5,10 +5,18 @@
       <v-container>
         <v-row>
           <v-col cols="5" sm="6" md="6">
-            suncy
+            <div class="box">
+              <div class="box__title">
+                Suncy
+              </div>
+              <div class="box__subtitle">
+                The Biggest STRATEGY IN 2020
+              </div>
+              <div class="box__description" />
+            </div>
           </v-col>
           <v-col cols="7" sm="6" md="6">
-            picture
+            picture here
           </v-col>
         </v-row>
 
