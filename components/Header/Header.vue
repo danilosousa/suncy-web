@@ -3,13 +3,13 @@
     <header class="header">
       <v-container>
         <v-row>
-          <v-col md="3">
+          <v-col md="3" sm="6">
             <div class="logo">
               <Logo />
               <span class="logo-text">SUNSY</span>
             </div>
           </v-col>
-          <v-col md="5">
+          <v-col sm="5" md="5" lg="5" class="d-none d-md-block">
             <nav class="header-nav">
               <ul>
                 <li>
@@ -22,7 +22,7 @@
               </ul>
             </nav>
           </v-col>
-          <v-col md="4" class="d-flex align-center justify-end">
+          <v-col md="4" sm="6" class="d-flex align-center justify-end">
             <span class="header__icon-search">
 
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 15 15" width="15px" height="15px">
@@ -33,10 +33,7 @@
 
             </span>
             <span>
-              <!-- <button class="button button-main shadow">
-                Publique
-              </button> -->
-              <CustomButton btn-text="Publique" />
+              <CustomButton variant="main" btn-text="Publique" />
             </span>
           </v-col>
         </v-row>
@@ -76,30 +73,8 @@ export default {
 }
 </script>
 <style lang="scss">
-  button {
-    &.button {
-      background-color: #4CAF50; /* Green */
-      border: none;
-      color: #fff;
-      font-weight: bold;
-      padding: 10px 50px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 14px;
-      border-radius: 16px;
-      transition-duration: 0.4s;
-      cursor: pointer;
-      &-main {
-        background: transparent -webkit-linear-gradient(45deg, #ff0f7b, #f89c2a) repeat scroll 0 0;
-      }
-    }
-  }
 
 .header {
-  // background: transparent -webkit-linear-gradient(45deg, #ff0f7b, #f89c2a) repeat
-  //   scroll 0 0;
-
   .logo {
     align-items: center;
     justify-content: flex-start;
