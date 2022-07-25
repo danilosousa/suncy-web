@@ -1,18 +1,42 @@
 <template>
-  <div>
-    <button class="button button-main shadow">
-      <slot> {{ btnText }}</slot>
-    </button>
-  </div>
+  <button
+    class="button shadow"
+    :class="btnStyle"
+  >
+    <slot> {{ btnText }}</slot>
+  </button>
 </template>
 
 <script>
 export default {
   props: {
+    variant: {
+      type: String,
+      default: ''
+    },
     btnText: {
       type: String,
       default () {
         return ''
+      }
+    }
+  },
+  data () {
+    return {
+
+    }
+  },
+  computed: {
+    btnStyle () {
+      switch (this.variant) {
+        case 'main':
+          return 'button-main'
+        case 'secondary':
+          return 'button-secondary'
+        case 'transparent':
+          return 'button-transparent'
+        default:
+          return ''
       }
     }
   }
@@ -22,11 +46,12 @@ export default {
 <style lang="scss">
   button {
     &.button {
-      background-color: #4CAF50; /* Green */
+      min-width: 150px;
+      width: 150px;
       border: none;
       color: #fff;
       font-weight: bold;
-      padding: 10px 50px;
+      padding: 10px 0;
       text-align: center;
       text-decoration: none;
       display: inline-block;
@@ -36,6 +61,15 @@ export default {
       cursor: pointer;
       &-main {
         background: transparent -webkit-linear-gradient(45deg, #ff0f7b, #f89c2a) repeat scroll 0 0;
+      }
+      &-secondary{
+        background: #fff;
+        color: #000;
+      }
+      &-transparent {
+        background: transparent;
+        color: #fff;
+        border: 1px solid #fff;
       }
     }
   }

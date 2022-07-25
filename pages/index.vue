@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-app>
     <div class="wapp-bg">
       <Header />
       <v-container>
@@ -7,16 +7,23 @@
           <v-col cols="5" sm="6" md="6">
             <div class="box">
               <div class="box__title">
-                Suncy
+                <!-- <h1>Sunsy</h1> -->
               </div>
               <div class="box__subtitle">
-                The Biggest STRATEGY IN 2020
+                <span><strong> A nova era dos eventos esportivos Organize divulgue,</strong>
+                  gerencie sem complicação</span>
               </div>
-              <div class="box__description" />
+              <div class="box__btns--actions">
+                <CustomButton variant="secondary" btn-text="Registrar" />
+                <CustomButton variant="transparent" btn-text="Compartilhar" />
+              </div>
+              <!-- <span class="box__description">
+                April 24, 2022 Crown Hall, 05 Vineyard Drive, Ohio teste
+              </span> -->
             </div>
           </v-col>
-          <v-col cols="7" sm="6" md="6">
-            picture here
+          <v-col cols="7" sm="6" md="6" class="box__video">
+            <div class="box__video--wrapper" />
           </v-col>
         </v-row>
 
@@ -45,7 +52,7 @@
       </v-container>
     </div>
     <Footer />
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -59,14 +66,46 @@ export default {
     &:after {
       content: '';
       background: url('../assets/images/bg.svg') no-repeat;
-      height: 690px;
+      height: 710px;
       width: 1170px;
       display: block;
       position: absolute;
       top: 0;
       z-index: -1;
-      background-size: 88%;
+      background-size: 90%;
+    }
+    .box {
+      height: 500px;
+      display: flex;
+      // align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 50px;
+      &__subtitle{
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      &__btns--actions{
+        margin: 25px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 65%;
 
+      }
+
+      &__video {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        &--wrapper {
+          background: #E6E6E6;
+          width: 550px;
+          height: 450px;
+          border-radius: 30px;
+        }
+      }
     }
   }
 </style>
